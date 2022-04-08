@@ -10,11 +10,11 @@ class Product extends Model
     use HasFactory;
     protected $table = "products";
     
-    public function product_type(){
-        return $this->belongsTo('App\Models\Product','id_type','id');
+      public function product_type(){
+        return $this->belongsTo('App\Models\ProductType','id_type','id');
     }
 
     public function bill_detail(){
-        return $this->hasMany('App\Models\Product','id_product','id');
+        return $this->hasMany('App\Models\BillDetail','id_product','id');
     }
 }

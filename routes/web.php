@@ -18,7 +18,10 @@ use App\Http\Controllers\PageController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', [App\Http\Controllers\PageController::class, 'index']);
+ Route::get('/', [App\Http\Controllers\PageController::class, 'index']);
+//Route::get('/', [App\Http\Controllers\PageController::class, 'getSp']);
+// Route::get('/', [App\Http\Controllers\PageController::class, 'getchitiet']);
+// Route::get('/', [App\Http\Controllers\PageController::class, 'getlienhe']);
 
 
  
