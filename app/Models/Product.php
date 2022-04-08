@@ -9,9 +9,7 @@ class Product extends Model
 {
     use HasFactory;
     protected $table = "products";
-
-   
-
+    
     public function product_type(){
         return $this->belongsTo('App\Models\Product','id_type','id');
     }

@@ -8,9 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Bill extends Model
 {
     use HasFactory;
-    protected $table = "bills";
+   protected $table = "bills";
 
-    public function product(){
-        return $this->hasMany('App\Models\Product','id_type','id');
+    public function bill_detail(){
+        return $this->hasMany('App\Models\BillDetail','id_bill','id');
+    }
+
+    public function bill(){
+        return $this->belongsTo('App\Models\Customer','id_customer','id');
     }
 }

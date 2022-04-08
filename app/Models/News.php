@@ -10,7 +10,5 @@ class News extends Model
     use HasFactory;
     protected $table = "news";
 
-    public function product(){
-        return $this->hasMany('App\Models\Product','id_type','id');
-    }
+   
 }
