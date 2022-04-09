@@ -17,15 +17,25 @@ class PageController extends Controller
     }
      public function getSp()
     {
+         // $sp_theoloai = Product::where('id_type',$type)->get();
+        // // $sp_khac = Product::where('id_type','<>',$type)->paginate(3);
+        // // $loai = ProductType::all();
+        // // $loap_sp = ProductType::where('id',$type)->first();
+        // return view('page.loai_sanpham',compact('sp_theoloai'));
         return view('page.loai_sanpham');
     }
-    public function getchitiet()
+    public function getchitiet(Request $req)
     {
-        return view('page.chitiet_sp');
+        $sanpham= Product::where('id',$req->id)->first();
+        return view('page.chitiet_sp',compact('sanpham'));
     }
      public function getlienhe()
     {
         return view('page.lienhe');
+    }
+      public function getabout()
+    {
+        return view('page.gioithieu');
     }
 }
 
