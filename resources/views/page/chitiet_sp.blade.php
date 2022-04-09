@@ -45,7 +45,7 @@
 							<div class="space20">&nbsp;</div>
 
 							<p>Options:</p>
-							<div class="single-item-options">
+							<div class="single-item-options"> 
 								<select class="wc-select" name="size">
 									<option>Size</option>
 									<option value="XS">XS</option>
@@ -84,8 +84,8 @@
 						</ul>
 
 						<div class="panel" id="tab-description">
-							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
-							<p>Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequaturuis autem vel eum iure reprehenderit qui in ea voluptate velit es quam nihil molestiae consequr, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </p>
+							<p>..</p>
+							<p>. </p>
 						</div>
 						<div class="panel" id="tab-reviews">
 							<p>No Reviews</p>
@@ -226,9 +226,9 @@
 								</div>
 							</div>
 						</div>
-					</div> <!-- best sellers widget -->
+					</div> 
 				</div>
 			</div>
-		</div> <!-- #content -->
-	</div> <!-- .container -->
+		</div> 
+	</div> 
 @endsection
