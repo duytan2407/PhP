@@ -3,11 +3,11 @@
 	<div class="inner-header">
 		<div class="container">
 			<div class="pull-left">
-				<h6 class="inner-title">Contacts</h6>
+				<h6 class="inner-title">Liên Hệ Lào</h6>
 			</div>
 			<div class="pull-right">
 				<div class="beta-breadcrumb font-large">
-					<a href="index.html">Home</a> / <span>Contacts</span>
+					<a href="/trangchu">Trang Chủ</a> / <span>Ấn Ngay</span>
 				</div>
 			</div>
 			<div class="clearfix"></div>
@@ -23,7 +23,7 @@
 			<div class="space50">&nbsp;</div>
 			<div class="row">
 				<div class="col-sm-8">
-					<h2>Contact Form</h2>
+					<h2>Liện Hệ</h2>
 					<div class="space20">&nbsp;</div>
 					<p>Đây Là Đâu Tự Liên Hệ Đi Mệt Lắm Rồi </p>
 					<div class="space20">&nbsp;</div>
@@ -41,11 +41,11 @@
 							<textarea name="your-message" placeholder="Your Message"></textarea>
 						</div>
 						<div class="form-block">
-							<button type="submit" class="beta-btn primary">Send Message <i class="fa fa-chevron-right"></i></button>
+							<button type="submit" class="beta-btn primary">Gửi Nào <i class="fa fa-chevron-right"></i></button>
 						</div>
 					</form>
 				</div>
-				<div class="col-sm-4">
+			<!-- 	<div class="col-sm-4">
 					<h2>Contact Information</h2>
 					<div class="space20">&nbsp;</div>
 
@@ -69,8 +69,8 @@
 						join our team. <br>
 						<a href="hr@betadesign.com">hr@betadesign.com</a>
 					</p>
-				</div>
+				</div> -->
 			</div>
-		</div> <!-- #content -->
-	</div> <!-- .container -->
+		</div> 
+	</div> 
 @endsection

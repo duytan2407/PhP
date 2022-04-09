@@ -20,10 +20,10 @@
 				<div class="row">
 					<div class="col-sm-3">
 						<ul class="aside-menu">
-							<li><a href="#">Typography</a></li>
-							<li><a href="#">Buttons</a></li>
-							<li><a href="#">Dividers</a></li>
-							<li><a href="#">Columns</a></li>
+							<li><a href="#">Khuyến Mãi Sập Sàn</a></li>
+							<li><a href="#">Đỉnh Cao Món Ăn</a></li>
+						<!-- 	<li><a href="#"></a></li> -->
+							<!-- <li><a href="#">Columns</a></li>
 							<li><a href="#">Icon box</a></li>
 							<li><a href="#">Notifications</a></li>
 							<li><a href="#">Progress bars and Skill meter</a></li>
@@ -42,7 +42,7 @@
 							<li><a href="#">Content box</a></li>
 							<li><a href="#">Computer sliders</a></li>
 							<li><a href="#">Pricing &amp; Data tables</a></li>
-							<li><a href="#">Process Builders</a></li>
+							<li><a href="#">Process Builders</a></li> -->
 						</ul>
 					</div>
 					<div class="col-sm-9">

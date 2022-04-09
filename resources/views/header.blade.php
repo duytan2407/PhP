@@ -2,10 +2,10 @@
 		<div class="header-top">
 			<div class="container">
 				<div class="pull-left auto-width-left">
-					<ul class="top-menu menu-beta l-inline">
+					<!-- <ul class="top-menu menu-beta l-inline">
 						<li><a href=""><i class="fa fa-home"></i> Cùng Tiến Luôn</a></li>
 						<li><a href=""><i class="fa fa-phone"></i> 0397514769</a></li>
-					</ul>
+					</ul> -->
 				</div>
 				<div class="pull-right auto-width-right">
 					<ul class="top-details menu-beta l-inline">
@@ -90,19 +90,19 @@
 				<div class="visible-xs clearfix"></div>
 				<nav class="main-menu">
 					<ul class="l-inline ov">
-						<li><a href="index.html">Trang chủ</a></li>
-						<li><a href="#">Thực Đơn Vùng Miền</a>
+						<li><a href="/trangchu">Trang chủ</a></li>
+						<li><a href="/sanpham">Thực Đơn Vùng Miền</a>
 							<ul class="sub-menu">
-								<li><a href="product_type.html">Miền Bắc</a></li>
-								<li><a href="product_type.html">Miền Trung</a></li>
-								<li><a href="product_type.html">Miền Nam</a></li>
+								@foreach($loai_sp as $loai)
+								<li><a href="/sanpham">{{$loai->name}}</a></li>
+								@endforeach
 							</ul>
 						</li>
 						<li><a href="about.html">Giới thiệu</a></li>
-						<li><a href="contacts.html">Liên hệ</a></li>
+						<li><a href="/lienhe">Liên hệ</a></li>
 					</ul>
 					<div class="clearfix"></div>
 				</nav>
-			</div> <!-- .container -->
-		</div> <!-- .header-bottom -->
-	</div> <!-- #header -->
+			</div> 
+		</div> 
+	</div> 

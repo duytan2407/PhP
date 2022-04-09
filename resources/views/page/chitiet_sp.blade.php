@@ -3,11 +3,11 @@
 <div class="inner-header">
 		<div class="container">
 			<div class="pull-left">
-				<h6 class="inner-title">Sản Phẩm</h6>
+				<h6 class="inner-title">Sản Phẩm {{$sanpham->name}}</h6>
 			</div>
 			<div class="pull-right">
 				<div class="beta-breadcrumb font-large">
-					<a href="index.html">Home</a> / <span>Sản Phẩm</span>
+					<a href="/trangchu">Home</a> / <span>Sản Phẩm Chi Tiết</span>
 				</div>
 			</div>
 			<div class="clearfix"></div>
@@ -21,13 +21,18 @@
 
 					<div class="row">
 						<div class="col-sm-4">
-							<img src="source/assets/dest/images/products/6.jpg" alt="">
+							<img src="source/image/product/{{$sanpham->image}}" alt="">
 						</div>
 						<div class="col-sm-8">
 							<div class="single-item-body">
-								<p class="single-item-title">Sample Woman Top</p>
+								<p class="single-item-title">{{$sanpham->image}}</p>
 								<p class="single-item-price">
-									<span>$34.55</span>
+										@if($sanpham->promotion_price==0)
+												<span class="flash-sale">{{number_format($sanpham->unit_price)}} đồng</span>
+											@else
+												<span class="flash-del">{{number_format($sanpham->unit_price)}} đồng</span>
+												<span class="flash-sale">{{number_format($sanpham->promotion_price)}} đồng</span>
+											@endif
 								</p>
 							</div>
 
@@ -35,12 +40,12 @@
 							<div class="space20">&nbsp;</div>
 
 							<div class="single-item-desc">
-								<p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo ms id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe.</p>
+								<p>{{$sanpham->description}}</p>
 							</div>
 							<div class="space20">&nbsp;</div>
 
 							<p>Options:</p>
-							<div class="single-item-options">
+							<div class="single-item-options"> 
 								<select class="wc-select" name="size">
 									<option>Size</option>
 									<option value="XS">XS</option>
@@ -79,8 +84,8 @@
 						</ul>
 
 						<div class="panel" id="tab-description">
-							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
-							<p>Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequaturuis autem vel eum iure reprehenderit qui in ea voluptate velit es quam nihil molestiae consequr, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </p>
+							<p>..</p>
+							<p>. </p>
 						</div>
 						<div class="panel" id="tab-reviews">
 							<p>No Reviews</p>
@@ -221,9 +226,9 @@
 								</div>
 							</div>
 						</div>
-					</div> <!-- best sellers widget -->
+					</div> 
 				</div>
 			</div>
-		</div> <!-- #content -->
-	</div> <!-- .container -->
+		</div> 
+	</div> 
 @endsection
